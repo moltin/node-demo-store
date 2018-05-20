@@ -1,0 +1,20 @@
+{
+  "name": "node-demo-store",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Jamie Barton <hi@jamiebarton.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "@moltin/sdk": "github:ynnoj/js-sdk",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "node-fetch": "^2.1.2",
+    "nodemon": "^1.17.4",
+    "pug": "^2.0.3"
+  }
+}

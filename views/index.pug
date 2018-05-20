@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .ui.items
+    each product in products
+      - var price = product.meta.display_price.with_tax || null
+      
+      .item
+        img(src=product.image, height=100)
+        a(href=`/products/${product.id}`) #{product.name} &mdash; #{price.formatted}
